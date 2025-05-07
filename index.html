@@ -141,7 +141,140 @@
     
     </section>
       
+    <!-- upcoming events -->
+    <section id="Events" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+          <!-- Header -->
+          <!-- Heading and Filter -->
+        <div class="flex justify-between items-center mb-8 gap-4">
+            <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">
+            Upcoming Events
+            </h2>
+        
+            <select id="eventFilter" class="w-40 sm:w-52 px-3 py-2 border border-gray-300 rounded-md text-sm bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#bb2197]">
+            <option value="all">All Events</option>
+            <option value="weekend">Weekend</option>
+            <option value="music">Music</option>
+            <option value="comedy">Comedy</option>
+            <option value="gaming">Gaming</option>
+            <option value="tech">Tech</option>
+            </select>
+        </div>
   
+      
+          <!-- Event Cards -->
+          <div id="event-cards" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-md w-full" data-category="tech">
+                <img src="Assets/images/test.jpeg" alt="Event Banner" class="w-full h-48 object-cover">
+                <div class="flex p-4">
+                <div class="w-1/5 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm font-bold text-[#bb2197] uppercase">May</span>
+                    <span class="text-xl font-extrabold text-gray-800 leading-none">12</span>
+                </div>
+                <div class="w-4/5 ps-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold text-gray-900">Tech Expo 2025</h3>
+                    <p class="text-sm text-gray-600 mt-1">Discover innovations in AI, Web3, and future tech.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-md w-full" data-category="music">
+                <img src="Assets/images/soundwave.jpeg" alt="Music Fest" class="w-full h-48 object-cover">
+                <div class="flex p-4">
+                <div class="w-1/5 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm font-bold text-[#bb2197] uppercase">Jun</span>
+                    <span class="text-xl font-extrabold text-gray-800 leading-none">03</span>
+                </div>
+                <div class="w-4/5 ps-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold text-gray-900">Soundwave Festival</h3>
+                    <p class="text-sm text-gray-600 mt-1">Live bands, DJs, and food trucks all day long.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-md w-full" data-category="comedy">
+                <img src="Assets/images/laugh_riot.jpeg" alt="Comedy Show" class="w-full h-48 object-cover">
+                <div class="flex p-4">
+                <div class="w-1/5 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm font-bold text-[#bb2197] uppercase">Apr</span>
+                    <span class="text-xl font-extrabold text-gray-800 leading-none">28</span>
+                </div>
+                <div class="w-4/5 ps-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold text-gray-900">Laugh Riot</h3>
+                    <p class="text-sm text-gray-600 mt-1">Top comedians on stage for a night of laughter.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-md w-full" data-category="gaming">
+                <img src="Assets/images/games_arena.jpeg" alt="Gaming Event" class="w-full h-48 object-cover">
+                <div class="flex p-4">
+                <div class="w-1/5 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm font-bold text-[#bb2197] uppercase">Jul</span>
+                    <span class="text-xl font-extrabold text-gray-800 leading-none">15</span>
+                </div>
+                <div class="w-4/5 ps-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold text-gray-900">Gamers Arena</h3>
+                    <p class="text-sm text-gray-600 mt-1">Esports battles and game previews from top developers.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-md w-full" data-category="weekend">
+                <img src="Assets/images/weekend_funfair.jpeg" alt="Weekend Fun" class="w-full h-48 object-cover">
+                <div class="flex p-4">
+                <div class="w-1/5 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm font-bold text-[#bb2197] uppercase">May</span>
+                    <span class="text-xl font-extrabold text-gray-800 leading-none">18</span>
+                </div>
+                <div class="w-4/5 ps-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold text-gray-900">Weekend Funfair</h3>
+                    <p class="text-sm text-gray-600 mt-1">Family activities, food, and rides at the park.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden max-w-md w-full" data-category="tech">
+                <img src="Assets/images/codefest.jpeg" alt="CodeFest" class="w-full h-48 object-cover">
+                <div class="flex p-4">
+                <div class="w-1/5 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm font-bold text-[#bb2197] uppercase">Aug</span>
+                    <span class="text-xl font-extrabold text-gray-800 leading-none">09</span>
+                </div>
+                <div class="w-4/5 ps-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold text-gray-900">CodeFest Hackathon</h3>
+                    <p class="text-sm text-gray-600 mt-1">24-hour hackathon for developers, designers, and builders.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <!-- Filtering Script -->
+      <script>
+        const dropdown = document.getElementById("eventFilter");
+        const cards = document.querySelectorAll(".event-card");
+      
+        dropdown.addEventListener("change", () => {
+          const selected = dropdown.value;
+          cards.forEach(card => {
+            const categories = card.dataset.category.split(" ");
+            if (selected === "all" || categories.includes(selected)) {
+              card.classList.remove("hidden");
+            } else {
+              card.classList.add("hidden");
+            }
+          });
+        });
+      </script>
+      
+      
   
 </body>
 </html>
