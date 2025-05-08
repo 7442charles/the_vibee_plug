@@ -12,3 +12,10 @@ dropdown.addEventListener("change", () => {
     }
     });
 });
+
+document.querySelectorAll('.event-card').forEach(card => {
+    card.addEventListener('click', () => {
+    const eventId = card.getAttribute('data-id');
+    console.log('Clicked card ID:', eventId);
+    });
+});
