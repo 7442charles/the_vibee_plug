@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIBEE PLUG - Buy & Discover Tickets to Events Near You</title>
+    <meta name="description" content="Discover and buy tickets for concerts, festivals, workshops, and more. Easy, secure, and fast ticketing for all your favorite events." />
+    <meta name="keywords" content="event tickets, buy tickets, concerts, festivals, ticket booking, online events, YourEventz" />
+    <meta name="author" content="YourEventz Team" /> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/images/favicon_io/site.webmanifest">
+
+    <!-- Theme color for mobile status bar -->
+    <meta name="theme-color" content="#bb2197">
+  
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      
+    <!-- Font (Optional: Improve Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body class="relative h-screen w-screen overflow-hidden">
+
+  <!-- Floating Navbar -->
+  <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/80 backdrop-blur-md shadow-md rounded-full px-6 py-2 z-50 flex items-center justify-between w-auto space-x-6 border border-gray-200"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1000"
+    data-aos-delay="100"
+    data-aos-once="true"
+  >
+    <img src="Assets/images/The vibee2.png" alt="Logo" class="h-6 w-auto hidden md:block" />
+    <div class="flex items-center space-x-6">
+      <a href="index.html" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Home</a>
+      <a href="index.html#Events" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Events</a>
+      <a href="#" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Account</a>
+      <a href="#" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Support</a>
+    </div>
+    <img src="Assets/images/The vibee2.png" alt="Logo" class="h-6 w-auto hidden md:block" />
+  </nav>
+
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center bg-opacity-60" style="background-image: url('Assets/images/hero_one.jpeg');"></div>
+
+  <!-- Login Card -->
+  <div class="relative z-10 flex items-center justify-center h-full px-4">
+    <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md space-y-6">
+      <h2 class="text-2xl font-bold text-center text-gray-800">Welcome Back 👋</h2>
+      <p class="text-center text-sm text-gray-500">Login to your VIBEE PLUG account</p>
+
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+
+        <input id="loginPassword" type="password" placeholder="Password" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+
+        <!-- Show Password Checkbox -->
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <input type="checkbox" id="showLoginPassword" class="cursor-pointer" />
+          <label for="showLoginPassword" class="cursor-pointer">Show Password</label>
+        </div>
+
+        <button type="submit" class="w-full bg-[#F5167E] text-white px-6 py-2 rounded-full text-sm md:text-base font-medium hover:bg-pink-600 transition">Login</button>
+      </form>
+
+      <p class="text-sm text-center text-gray-600">
+        Don't have an account?
+        <a href="signup.html" class="text-blue-600 hover:underline">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const showLoginPassword = document.getElementById('showLoginPassword');
+    const loginPassword = document.getElementById('loginPassword');
+
+    showLoginPassword.addEventListener('change', () => {
+      loginPassword.type = showLoginPassword.checked ? 'text' : 'password';
+    });
+  </script>
+
+</body>
+
+</html>
