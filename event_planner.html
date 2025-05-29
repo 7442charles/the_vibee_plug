@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIBEE PLUG - Buy & Discover Tickets to Events Near You</title>
+    <meta name="description" content="Discover and buy tickets for concerts, festivals, workshops, and more. Easy, secure, and fast ticketing for all your favorite events." />
+    <meta name="keywords" content="event tickets, buy tickets, concerts, festivals, ticket booking, online events, YourEventz" />
+    <meta name="author" content="YourEventz Team" /> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/images/favicon_io/site.webmanifest">
+
+    <!-- Theme color for mobile status bar -->
+    <meta name="theme-color" content="#bb2197">
+  
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      
+    <!-- Font (Optional: Improve Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- <link rel="stylesheet" href="Assets/css/styles.css"> -->
+       <style>
+         .step-content { display: none; }
+            .step-content.active { display: block; }
+        </style>
+
+</head>
+<body class="relative h-screen w-screen overflow-hidden bg-gray-100 font-sans">
+  <div class="flex h-screen pt-24 overflow-hidden">
+   
+
+   <!-- Sidebar Timeline -->
+    <aside class="w-1/4 bg-white shadow-lg p-6 space-y-6 overflow-y-auto ml-6">
+        <h2 class="text-xl font-bold text-[#F5167E] mb-4">Post New Event</h2>
+        <ol class="relative border-l border-[#F5167E] space-y-8 pl-6">
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E] rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-[#F5167E] ml-6">Basic Info</span>
+            </li>
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E] rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-[#F5167E] ml-6">Date & Time</span>
+            </li>
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E]/50 rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-gray-700 ml-6">Venue</span>
+            </li>
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E]/50 rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-gray-700 ml-6">Tickets</span>
+            </li>
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E]/50 rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-gray-700 ml-6">Media</span>
+            </li>
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E]/50 rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-gray-700 ml-6">Organizer Info</span>
+            </li>
+
+            <li class="flex items-center relative">
+            <div class="w-4 h-4 bg-[#F5167E]/50 rounded-full absolute left-0"></div>
+            <span class="text-sm font-medium text-gray-700 ml-6">Confirmation</span>
+            </li>
+
+        </ol>
+    </aside>
+
+
+    <!-- Stepper Form -->
+    <main class="w-3/4 overflow-y-auto p-10">
+
+    <!-- STEP 1: Basic Info -->
+    <div class="step-content active bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step1">
+        <h2 class="text-2xl font-bold text-gray-800">Step 1: Basic Info</h2>
+        <form id="form-step1" class="space-y-4">
+        <!-- Event Title -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Event Title</label>
+            <input type="text" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" placeholder="e.g. Nairobi Music Fest" required />
+        </div>
+
+        <!-- Description -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Description</label>
+            <textarea rows="4" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" placeholder="Brief description about your event..." required></textarea>
+        </div>
+
+        <!-- Event Type -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Event Type</label>
+            <select class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required>
+            <option>Concert</option>
+            <option>Festival</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Other</option>
+            </select>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between pt-6">
+            <button type="button" disabled class="px-6 py-2 rounded-full bg-gray-300 text-gray-600 font-medium cursor-not-allowed">Previous</button>
+            <button type="button" onclick="goToStep(2)" class="px-6 py-2 rounded-full bg-[#F5167E] text-white font-medium hover:bg-pink-600 transition">Next Step</button>
+        </div>
+        </form>
+    </div>
+
+    <!-- STEP 2: Date & Time -->
+    <div class="step-content bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step2">
+        <h2 class="text-2xl font-bold text-gray-800">Step 2: Date & Time</h2>
+        <form id="form-step2" class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Start Date</label>
+            <input type="date" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Start Time</label>
+            <input type="time" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">End Date</label>
+            <input type="date" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">End Time</label>
+            <input type="time" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div class="flex justify-between pt-6">
+            <button type="button" onclick="goToStep(1)" class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition">Previous</button>
+            <button type="button" onclick="goToStep(3)" class="px-6 py-2 rounded-full bg-[#F5167E] text-white font-medium hover:bg-pink-600 transition">Next Step</button>
+        </div>
+        </form>
+    </div>
+
+    <!-- STEP 3: Venue (Fixed) -->
+    <div class="step-content bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step3">
+        <h2 class="text-2xl font-bold text-gray-800">Step 3: Venue</h2>
+        <form class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Venue Name</label>
+            <input type="text" placeholder="e.g. KICC Grounds" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Address / Location</label>
+            <textarea rows="3" placeholder="Enter address, Google Maps link, or directions..." class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required></textarea>
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">City</label>
+            <input type="text" placeholder="e.g. Nairobi" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div class="flex justify-between pt-6">
+            <button type="button" onclick="goToStep(2)" class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition">Previous</button>
+            <button type="button" onclick="goToStep(4)" class="px-6 py-2 rounded-full bg-[#F5167E] text-white font-medium hover:bg-pink-600 transition">Next Step</button>
+        </div>
+        </form>
+    </div>
+
+    <!-- STEP 4: Tickets -->
+    <div class="step-content bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step4">
+        <h2 class="text-2xl font-bold text-gray-800">Step 4: Tickets</h2>
+        <form class="space-y-6">
+
+            <!-- VVIP Tickets (Optional) -->
+            <div class="border border-gray-200 rounded-lg p-4">
+            <label class="inline-flex items-center space-x-2">
+                <input id="vvip-enable" type="checkbox" class="form-checkbox text-[#F5167E]" />
+                <span class="text-sm font-medium text-gray-700">Enable VVIP Tickets (Optional)</span>
+            </label>
+            <div id="vvip-fields" class="mt-4 space-y-4 hidden">
+                <h3 class="text-lg font-semibold text-[#F5167E]">VVIP Ticket</h3>
+                <div>
+                <label class="block text-sm font-medium text-gray-700">VVIP Price (KES)</label>
+                <input type="number" placeholder="e.g. 5000" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" />
+                </div>
+                <div>
+                <label class="block text-sm font-medium text-gray-700">VVIP Quantity Available</label>
+                <input type="number" placeholder="e.g. 20" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" />
+                </div>
+            </div>
+            </div>
+
+            <!-- VIP Tickets -->
+            <div class="border border-gray-200 rounded-lg p-4 space-y-4">
+            <h3 class="text-lg font-semibold text-[#F5167E]">VIP Ticket</h3>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">VIP Price (KES)</label>
+                <input type="number" placeholder="e.g. 3000" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">VIP Quantity Available</label>
+                <input type="number" placeholder="e.g. 50" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+            </div>
+            </div>
+
+            <!-- Regular Tickets -->
+            <div class="border border-gray-200 rounded-lg p-4 space-y-4">
+            <h3 class="text-lg font-semibold text-[#F5167E]">Regular Ticket</h3>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Regular Price (KES)</label>
+                <input type="number" placeholder="e.g. 1500" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Regular Quantity Available</label>
+                <input type="number" placeholder="e.g. 100" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+            </div>
+            </div>
+
+            <div class="flex justify-between pt-6">
+            <button type="button" onclick="goToStep(3)" class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition">Previous</button>
+            <button type="button" onclick="goToStep(5)" class="px-6 py-2 rounded-full bg-[#F5167E] text-white font-medium hover:bg-pink-600 transition">Next Step</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- STEP 5: Media -->
+    <div class="step-content bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step5">
+        <h2 class="text-2xl font-bold text-gray-800">Step 5: Media</h2>
+        <form class="space-y-4">
+            
+            <!-- Upload Banner Section -->
+            <div class="space-y-2">
+            <label for="banner-upload" class="block text-sm font-medium text-gray-700">Upload Banner Image</label>
+
+            <!-- Styled Dropzone/Select Button -->
+            <label for="banner-upload"
+                class="flex items-center justify-center px-6 py-3 border-2 border-dashed border-[#F5167E] rounded-lg cursor-pointer hover:bg-pink-50 transition">
+                <span class="text-[#F5167E] font-medium">Click to select an image (Max 5MB)</span>
+            </label>
+
+            <!-- Hidden File Input -->
+            <input id="banner-upload" type="file" accept="image/*" class="hidden" onchange="previewBanner(event)" />
+
+            <!-- Helper text -->
+            <p class="text-xs text-gray-500">Accepted formats: JPG, PNG, GIF. Max size: 5MB.</p>
+
+            <!-- Preview Area -->
+            <div id="banner-preview" class="mt-4 hidden">
+                <p class="text-sm text-gray-600 mb-2">Preview:</p>
+                <img id="banner-preview-img" src="" alt="Banner Preview" class="rounded-lg shadow max-h-60 object-cover" />
+            </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-between pt-6">
+            <button type="button" onclick="goToStep(4)"
+                class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition">Previous</button>
+            <button type="button" onclick="goToStep(6)"
+                class="px-6 py-2 rounded-full bg-[#F5167E] text-white font-medium hover:bg-pink-600 transition">Next Step</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Image Preview Script -->
+    <script>
+        function previewBanner(event) {
+            const file = event.target.files[0];
+            const previewContainer = document.getElementById('banner-preview');
+            const previewImage = document.getElementById('banner-preview-img');
+
+            if (file && file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                previewImage.src = e.target.result;
+                previewContainer.classList.remove('hidden');
+            };
+            reader.readAsDataURL(file);
+            } else {
+            previewContainer.classList.add('hidden');
+            previewImage.src = "";
+            }
+        }
+    </script>
+
+
+    <!-- STEP 6: Organizer Info -->
+    <div class="step-content bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step6">
+        <h2 class="text-2xl font-bold text-gray-800">Step 6: Organizer Info</h2>
+        <form class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Organizer Name</label>
+            <input type="text" placeholder="e.g. Vibee Plug Ltd" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Contact Email</label>
+            <input type="email" placeholder="e.g. info@vibeeplug.com" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+            <input type="tel" placeholder="e.g. +254700123456" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-[#F5167E] focus:border-[#F5167E]" required />
+        </div>
+
+        <div class="flex justify-between pt-6">
+            <button type="button" onclick="goToStep(5)" class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition">Previous</button>
+            <button type="button" onclick="goToStep(7)" class="px-6 py-2 rounded-full bg-[#F5167E] text-white font-medium hover:bg-pink-600 transition">Next Step</button>
+        </div>
+        </form>
+    </div>
+
+    <!-- STEP 7: Confirmation -->
+    <div class="step-content bg-white shadow-md rounded-xl p-8 max-w-3xl mx-auto space-y-6" id="step7">
+        <h2 class="text-2xl font-bold text-gray-800">Step 7: Confirmation</h2>
+        <p class="text-gray-700">Please review all the event information before submitting. Make sure all details are correct. Once submitted, the event will be posted.</p>
+        <div class="flex justify-between pt-6">
+        <button type="button" onclick="goToStep(6)" class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition">Previous</button>
+        <button type="submit" class="px-6 py-2 rounded-full bg-green-600 text-white font-medium hover:bg-green-700 transition">Submit Event</button>
+        </div>
+    </div>
+
+    </main>
+
+
+
+  <!-- JS: Step Navigation -->
+   <script>
+        function goToStep(step) {
+            // Hide all step content
+            const allSteps = document.querySelectorAll('.step-content');
+            allSteps.forEach(div => div.classList.remove('active'));
+
+            // Show the selected step
+            const currentStep = document.getElementById(`step${step}`);
+            if (currentStep) currentStep.classList.add('active');
+
+            // Update the timeline sidebar colors
+            const timelineItems = document.querySelectorAll('aside ol li');
+            timelineItems.forEach((item, index) => {
+            if (index < step) {
+                item.querySelector('div').classList.remove('bg-[#F5167E]/50');
+                item.querySelector('div').classList.add('bg-[#F5167E]');
+                item.querySelector('span').classList.remove('text-gray-700');
+                item.querySelector('span').classList.add('text-[#F5167E]');
+            } else {
+                item.querySelector('div').classList.remove('bg-[#F5167E]');
+                item.querySelector('div').classList.add('bg-[#F5167E]/50');
+                item.querySelector('span').classList.remove('text-[#F5167E]');
+                item.querySelector('span').classList.add('text-gray-700');
+            }
+            });
+        }
+
+        // Optional: initialize step 1 on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            goToStep(1);
+        });
+
+         // Toggle VVIP ticket fields visibility
+       const vvipCheckbox = document.getElementById('vvip-enable');
+        const vvipFields = document.getElementById('vvip-fields');
+
+        vvipCheckbox.addEventListener('change', () => {
+            vvipFields.classList.toggle('hidden', !vvipCheckbox.checked);
+        });
+    </script>
+
+
+
+</body>
+</html>
